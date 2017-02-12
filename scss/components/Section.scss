@@ -1,0 +1,13 @@
+.Section {
+  margin: 1em;
+  max-width: 40em;
+
+  &__title {
+    font-size: 1.5em;
+  }
+
+  &__body {
+    margin: 1em 0;
+    line-height: 1.25em;
+  }
+}

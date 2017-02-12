@@ -1,0 +1,21 @@
+@import './variables';
+
+body {
+  background: $color--bg;
+  color: $color--text;
+  font-family: Courier New, Courier, monospace;
+  margin: 0;
+}
+
+a {
+  color: $color--link;
+  &:hover, &:focus {
+    color: $color--link-hover;
+  }
+  &:visited {
+    color: $color--link-visited;
+    &:hover, &:focus {
+      color: $color--link-hover;
+    }
+  }
+}

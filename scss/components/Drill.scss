@@ -1,0 +1,100 @@
+@import '../variables';
+
+$color--drill: $color--link;
+
+.Drill {
+  width: 22.6em;
+  height: 10em;
+  white-space: nowrap;
+
+  &__handle-container {
+    display: inline-block;
+    width: 8em;
+    height: 10em;
+    background: $color--drill;
+    overflow: hidden;
+  }
+
+  &__handle-background {
+    width: 5.5em;
+    height: 9em;
+    padding: .5em 0;
+    background: $color--bg;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__handle-top {
+    width: 5.5em;
+    height: 4.5em;
+    background: $color--drill;
+    border-top-left-radius: 3em 4.5em;
+  }
+
+  &__handle-hole {
+    position: absolute;
+    top: 3.5em;
+    right: -.5em;
+    width: 2.25em;
+    height: 3em;
+    background: $color--bg;
+    border-top-left-radius: 1.75em 1.5em;
+    border-bottom-left-radius: 1em 1.5em;
+  }
+
+  &__handle-bottom {
+    margin-top: -2em;
+    margin-left: 1.25em;
+    width: 3.75em;
+    height: 6.5em;
+    background: $color--drill;
+    border-bottom-left-radius: 2.5em 6em;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 1em;
+      height: 3em;
+      position: relative;
+      left: 3em;
+      top: 3.5em;
+      background: $color--drill;
+      border-bottom-right-radius: .4em 4.5em;
+      border-top-right-radius: .8em 4em;
+    }
+  }
+
+  &__spike-container {
+    width: 14em;
+    height: 9em;
+    display: inline-block;
+    padding: .5em 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__spike {
+    width: 0; 
+    height: 0; 
+    border-top: 4.5em solid transparent;
+    border-bottom: 4.5em solid transparent;
+    border-left: 14em solid $color--drill;
+  }
+
+  &__stripes {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -4em;
+    right: 0;
+  }
+
+  &__stripe {
+    display: inline-block;
+    width: .375em;
+    height: 20em;
+    background: $color--bg;
+    margin-left: 2em;
+    transform: rotate(25deg);
+  }
+}
