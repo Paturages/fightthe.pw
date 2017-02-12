@@ -2,12 +2,13 @@
 
 $color--drill: $color--link;
 $color--drill-blink: rgba($color--drill, .8);
-$animation--drill: 2s linear infinite;
+$animation--drill: linear forwards 2s;
 
 .Drill {
   width: 22.6em;
   height: 10em;
   white-space: nowrap;
+  cursor: pointer;
 
   &__handle-container {
     display: inline-block;
@@ -93,24 +94,35 @@ $animation--drill: 2s linear infinite;
     border-top: 4.5em solid transparent;
     border-bottom: 4.5em solid transparent;
     border-left: 14em solid $color--drill;
+    transform: translate3d(0, 0, 0);
     animation: Drill__blink $animation--drill;
+    animation-iteration-count: infinite;
   }
 
   &__stripes {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: -4em;
     right: 0;
-    transform: rotate(25deg);
+    animation: Drill__spin $animation--drill;
+    animation-iteration-count: infinite;
+  }
+
+  &:hover {
+    .Drill__spike {
+      animation-iteration-count: 1;
+    }
+    .Drill__stripes {
+      animation-iteration-count: 1;
+    }
   }
 
   @keyframes Drill__spin {
     from {
-      left: -6em;
+      transform: rotate(25deg) translate3d(0, 0, 0);
     }
     to {
-      left: 0;
+      transform: rotate(25deg) translate3d(6em, 0, 0);
     }
   }
 
@@ -120,7 +132,6 @@ $animation--drill: 2s linear infinite;
     width: .375em;
     height: 20em;
     background: $color--bg;
-    margin-left: 2em;
-    animation: Drill__spin $animation--drill;
+    margin-right: 2em;
   }
 }
