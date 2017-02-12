@@ -9,7 +9,7 @@ Gulp.task('sass', () => Gulp.src('./scss/**/*.scss')
   .pipe(Sass().on('error', Sass.logError))
   .pipe(PostCSS([ CSSNext() ]))
   .pipe(Concat('style.css'))
-  .pipe(CleanCSS({ compatibility: 'ie8' }))
+  .pipe(CleanCSS({ compatibility: 'ie10' }))
   .pipe(Gulp.dest('./dist'))
 );
 

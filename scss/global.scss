@@ -19,3 +19,18 @@ a {
     }
   }
 }
+
+ul {
+  padding: 0 0 0 1em;
+}
+
+li {
+  list-style-type: none;
+  position: relative;
+}
+
+li:before {
+  content: '*';
+  position: absolute;
+  left: -1em;
+}

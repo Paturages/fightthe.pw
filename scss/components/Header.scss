@@ -4,7 +4,7 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  margin: 1em 0 -2.5em;
+  margin: 1em 0 -1em;
 
   @media (max-width: 860px) {
     flex-direction: column;
@@ -14,6 +14,7 @@
 
   &__left {
     @media (min-width: 861px) {
+      flex: 1;
       height: 5em;
       border-bottom: 3px solid $color--text;
       margin-bottom: calc(5em - 1px);
@@ -21,6 +22,7 @@
       display: flex;
       flex-direction: row;
       align-items: flex-end;
+      justify-content: flex-end;
     }
   }
 
@@ -28,6 +30,7 @@
     margin: .5em 0;
     font-size: 2em;
     font-weight: bold;
+    white-space: nowrap;
   }
 
   &__drill {
@@ -46,7 +49,7 @@
       display: flex;
       flex-direction: row;
       align-items: flex-end;
-      justify-content: flex-end;
+      justify-content: flex-start;
     }
   }
 
