@@ -1,7 +1,6 @@
 @import '../variables';
 
 $color--drill: $color--link;
-$color--drill-blink: rgba($color--drill, .8);
 $animation--drill: linear forwards 2s;
 
 .Drill {
@@ -78,13 +77,13 @@ $animation--drill: linear forwards 2s;
 
   @keyframes Drill__blink {
     0% {
-      border-left-color: $color--drill;
+      opacity: 1;
     }
     50% {
-      border-left-color: $color--drill-blink;
+      opacity: .75;
     }
     100% {
-      border-left-color: $color--drill;
+      opacity: 1;
     }
   }
 
