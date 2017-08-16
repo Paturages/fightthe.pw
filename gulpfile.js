@@ -10,7 +10,7 @@ Gulp.task('sass', () => Gulp.src('./scss/**/*.scss')
   .pipe(PostCSS([ CSSNext() ]))
   .pipe(Concat('style.css'))
   .pipe(CleanCSS({ compatibility: 'ie10' }))
-  .pipe(Gulp.dest('./dist'))
+  .pipe(Gulp.dest('./docs'))
 );
 
 Gulp.task('default', ['sass'], () => Gulp.watch('./scss/**/*.scss', ['sass']));
