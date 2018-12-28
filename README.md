@@ -1,7 +1,7 @@
 # fightthe.pw
 
-Source code for [fightthe.pw](https://fightthe.pw), featuring a carefully crafted drill in CSS (for what it's worth).
+Source code for [fightthe.pw](https://fightthe.pw) along with its [Jekyll](https://jekyllrb.com) theme.
 
 ## Building and deploying
 
-`npm install`, then `gulp`. Throw whatever ends up in `dist/` on a server somewhere.
+[Just follow the Jekyll documentation :^)](https://jekyllrb.com/docs/)

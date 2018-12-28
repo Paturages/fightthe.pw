@@ -1,0 +1,13 @@
+---
+layout: base
+---
+
+<h2><a href="{{ page.url | relative_url }}">{{ page.title }}</a></h2>
+<div class="post__date">{{ page.date | date: "%B %d, %Y" }}</div>
+<br />
+<div class="post__tags">
+  {% for tag in page.tags %}
+  <div class="post__tag">{{ tag }}</div>
+  {% endfor %}
+</div>
+<div>{{ content }}</div>

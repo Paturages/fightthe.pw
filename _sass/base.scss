@@ -1,0 +1,24 @@
+@import 'colors.scss';
+
+html, body {
+  background: $color__lighter;
+  color: $color__darker;
+  margin: 0;
+}
+
+a {
+  color: $color__dark;
+  &:visited {
+    color: $color__darker;
+  }
+}
+
+img {
+  width: 100%;
+}
+
+.content {
+  max-width: 800px;
+  margin: 2em auto 4em;
+  padding: 0 1em;
+}

@@ -1,0 +1,26 @@
+---
+title: Projects - Fight the power!
+permalink: /projects
+layout: base
+---
+
+<h2>Projects</h2>
+
+<p>A few of my personal projects in development.</p>
+
+{% for project in site.data.projects %}
+<div class="project">
+  <h3><a href="{{ project.link }}" target="_blank">{{ project.title }}</a></h3>
+  <div class="project__subtitle">{{ project.subtitle }}</div>
+  <div class="project__description">{{ project.description | markdownify }}</div>
+  <ul class="project__technologies">
+    {% for tech in project.technologies %}
+    <li class="project__technology">{{ tech }}</li>
+    {% endfor %}
+  </ul>
+  <div class="project__links">
+    <a href="{{ project.link }}" target="_blank">Link to project</a>
+    <a href="{{ project.github }}" target="_blank">Github</a>
+  </div>
+</div>
+{% endfor %}

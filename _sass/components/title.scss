@@ -1,0 +1,135 @@
+@import 'colors.scss';
+
+$drill__origin: -50vw;
+$drill__duration: 1.25s;
+$line__duration: .5s;
+
+@keyframes line__appear {
+  from {
+    transform: scale3d(0, 1, 1);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes drill__appear {
+  0% {
+    opacity: 0;
+    transform: translate3d($drill__origin, 0, 0);
+  }
+  30% {
+    opacity: 1;
+    transform: translate3d($drill__origin, 0, 0);
+  }
+  80% {
+    opacity: 1;
+    transform: translate3d(-$drill__origin/20, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.title {
+  background: $color__dark;
+  color: $color__light;
+  height: 17.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  h1 {
+    color: $color__lighter;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  &__author {
+    font-size: .8em;
+    margin: -1.5em 0 1em;
+  }
+
+  &__drill {
+    position: relative;
+    width: 100%;
+    padding-top: 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    &-line {
+      z-index: 0;
+      position: absolute;
+      top: 5em;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: $color__light;
+    }
+    &-container {
+      z-index: 1;
+      background: $color__dark;
+      padding: 0 2em;
+      font-size: .6em;
+    }
+  }
+
+  &--home &__drill {
+    &-line {
+      transform: scale3d(0, 1, 1);
+      transform-origin: left;
+      animation: line__appear $line__duration ease-in-out forwards;
+    }
+    &-container {
+      opacity: 0;
+      transform: translate3d($drill__origin, 0, 0);
+      animation: drill__appear $drill__duration $line__duration ease-in-out forwards;
+      .drill {
+        opacity: 0;
+        animation: fade-in $drill__duration $line__duration ease-in-out forwards;
+      }
+    }
+  }
+  &--home h1 {
+    opacity: 0;
+    animation: fade-in $line__duration ($drill__duration + $line__duration) ease-in-out forwards;
+  }
+  &--home &__author {
+    opacity: 0;
+    animation: fade-in $line__duration ($drill__duration + $line__duration) ease-in-out forwards;
+  }
+
+  nav {
+    background: $color__darker;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: .5em 0;
+    a {
+      margin: 0 .5em;
+      color: $color__light;
+      text-decoration: none;
+      &:visited {
+        color: $color__lighter;
+      }
+    }
+  }
+}

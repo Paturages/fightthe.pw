@@ -1,0 +1,20 @@
+.project {
+  &__subtitle {
+    font-size: .8em;
+    opacity: .8;
+    margin-top: -1em;
+  }
+  &__technologies {
+    font-size: .8em;
+    opacity: .8;
+    display: flex;
+    flex-flow: row wrap;
+    padding-inline-start: 0;
+  }
+  &__technology {
+    list-style-type: none;
+    margin-block-start: 0;
+    margin-right: 1em;
+    padding-inline-start: 0;
+  }
+}

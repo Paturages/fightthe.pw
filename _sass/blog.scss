@@ -1,0 +1,21 @@
+@import 'colors.scss';
+
+.post {
+  &__date {
+    font-size: .8em;
+    opacity: .8;
+    margin-top: -1em;
+  }
+  &__tags {
+    font-size: .8em;
+    opacity: .8;
+    display: flex;
+    flex-flow: row-wrap;
+  }
+  &__tag {
+    margin-right: 1em;
+    background: $color--light;
+    border-radius: 1em;
+    padding: 0 .5em;
+  }
+}

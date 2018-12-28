@@ -1,9 +1,10 @@
-@import '../variables';
+@import 'colors.scss';
 
-$color--drill: $color--link;
-$animation--drill: linear forwards 2s;
+$color__drill: $color__lighter;
+$color__bg: $color__dark;
+$animation__drill: linear forwards 2s;
 
-.Drill {
+.drill {
   width: 22.6em;
   height: 10em;
   white-space: nowrap;
@@ -13,7 +14,7 @@ $animation--drill: linear forwards 2s;
     display: inline-block;
     width: 8em;
     height: 10em;
-    background: $color--drill;
+    background: $color__drill;
     overflow: hidden;
   }
 
@@ -21,7 +22,7 @@ $animation--drill: linear forwards 2s;
     width: 5.5em;
     height: 9em;
     padding: .5em 0;
-    background: $color--bg;
+    background: $color__bg;
     position: relative;
     overflow: hidden;
   }
@@ -29,7 +30,7 @@ $animation--drill: linear forwards 2s;
   &__handle-top {
     width: 5.5em;
     height: 4.5em;
-    background: $color--drill;
+    background: $color__drill;
     border-top-left-radius: 3em 4.5em;
   }
 
@@ -39,7 +40,7 @@ $animation--drill: linear forwards 2s;
     right: -.5em;
     width: 2.25em;
     height: 3em;
-    background: $color--bg;
+    background: $color__bg;
     border-top-left-radius: 1.75em 1.5em;
     border-bottom-left-radius: 1em 1.5em;
   }
@@ -49,7 +50,7 @@ $animation--drill: linear forwards 2s;
     margin-left: 1.25em;
     width: 3.75em;
     height: 6.5em;
-    background: $color--drill;
+    background: $color__drill;
     border-bottom-left-radius: 2.5em 6em;
 
     &::after {
@@ -60,7 +61,7 @@ $animation--drill: linear forwards 2s;
       position: relative;
       left: 3em;
       top: 3.5em;
-      background: $color--drill;
+      background: $color__drill;
       border-bottom-right-radius: .4em 4.5em;
       border-top-right-radius: .8em 4em;
     }
@@ -92,9 +93,9 @@ $animation--drill: linear forwards 2s;
     height: 0; 
     border-top: 4.5em solid transparent;
     border-bottom: 4.5em solid transparent;
-    border-left: 14em solid $color--drill;
+    border-left: 14em solid $color__drill;
     transform: translate3d(0, 0, 0);
-    animation: Drill__blink $animation--drill;
+    animation: Drill__blink $animation__drill;
     animation-iteration-count: infinite;
   }
 
@@ -103,7 +104,8 @@ $animation--drill: linear forwards 2s;
     top: 0;
     bottom: 0;
     right: 0;
-    animation: Drill__spin $animation--drill;
+    transform-origin: center;
+    animation: Drill__spin $animation__drill;
     animation-iteration-count: infinite;
   }
 
@@ -121,16 +123,16 @@ $animation--drill: linear forwards 2s;
       transform: rotate(25deg) translate3d(0, 0, 0);
     }
     to {
-      transform: rotate(25deg) translate3d(6em, 0, 0);
+      transform: rotate(25deg) translate3d(2.7em, 0, 0);
     }
   }
 
   &__stripe {
     position: relative;
     display: inline-block;
-    width: .375em;
+    width: 2px;
     height: 20em;
-    background: $color--bg;
+    background: $color__bg;
     margin-right: 2em;
   }
 }
