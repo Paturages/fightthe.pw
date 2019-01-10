@@ -27,6 +27,8 @@ A curated list of drive folders containing vast amounts of charts and songs, eit
 
 The majority of individual charters featured on the spreadsheet are vetted and thoroughly reviewed for their abilities: if you picked any of their drives, you would be 99% sure to be provided with professional-grade, high quality charts.
 
+Though the spreadsheet as it stands at the time of writing could use a little bit of cleaning: the spreadsheet didn't use to have strict entry requirements like it has now. For instance, the overall quality of the second tab of the spreadsheet is more questionable than the main one. The current maintainers are however quite acquainted and sensibilized with chart quality (some of them are even chart reviewers), so I trust their judgement.
+
 The spreadsheet is fine and good if you're looking into building your song library regardless of the songs you're getting, but it lacks searchability. How do you know what Chezy has charted besides *Flamingo*? Do you remember the songs that were charted for Rock Band 2 DLC? I certainly don't, and I don't wanna look into each and every charter's drive or download entire game setlists just to find out *that one song*.
 
 **Lack of searchability** is the one reason the *chorus* idea came to spawn.
@@ -43,7 +45,7 @@ C3 at the time was not too Clone Hero-aware. The only reason one could play thei
 
 Its most vocally outcried downfall is its lack of quality control. The legacy C3 database used to have the same level of vetting the spreadsheet has, and the legacy C3 database is still a very good source of guaranteed high quality charts. However, C3 evolved as an open platform to any charter who registered. It has its advantages, such as great community development and involvement, as well as preventing elitism, but it ultimately hurts the end user, the player, who has to go through multiple charts to determine which one is good or not, if they're seeking playable charts.
 
-The rating system doesn't confidently help the player as anyone can vote, including uneducated players who could very well recommend bad charts. It also opens the platform to alt-account manipulation and vote brigading.
+The rating system doesn't confidently help the player as anyone can vote, including uneducated players who could very well recommend bad charts. It also opens the platform to alt-account manipulation and vote brigading. C3 has disabled the rating system for years now, despite the field being visible.
 
 ### The C3 conversions drive folder
 
@@ -267,11 +269,11 @@ There might be other ways I forgot or slipped through my radar. But still, a com
     </td>
     <td>
       ★★★☆☆<br />
-      <small>Ratings, legacy is good; open platform</small>
+      <small>Legacy is good; open platform</small>
     </td>
     <td>
       ★★☆☆☆<br />
-      <small>Rating information is lost</small>
+      <small>Associated information from source, such as comments, is lost</small>
     </td>
     <td>
       ★☆☆☆☆<br />
@@ -365,7 +367,7 @@ There might be other ways I forgot or slipped through my radar. But still, a com
     </td>
     <td>
       ★☆☆☆☆<br />
-      <small>Can contact the charters that are featured, I guess</small>
+      <small>Can contact the charters who are featured, I guess</small>
     </td>
     <td>
       ★★★★★<br />
@@ -484,7 +486,7 @@ Now, how does chorus rate?
     </td>
     <td>
       ★☆☆☆☆<br />
-      <small>Can contact the charters that are featured, I guess</small>
+      <small>Can contact the charters who are featured, I guess</small>
     </td>
   </tr>
 </tbody>
@@ -499,7 +501,7 @@ chorus leverages metadata from both chart files and metadata files (`song.ini`) 
 
 Automatic dead link litigation answers the Frets on Fire and ScoreHero problems. The most up to date links are synced daily.
 
-There is no rating system, but rather a meritocracy that relies on the existing CH Discord charter role system. chorus is therefore indirectly supported by a team of skilled and experienced chart reviewers. Though also directly, because I also belong to these chart reviewers.
+There is no rating system nor comments, but rather a meritocracy that relies on the existing CH Discord charter role system. chorus is therefore indirectly supported by a team of skilled and experienced chart reviewers. Though also directly, because I also belong to these chart reviewers.
 
 It is deliberately wielding "Clone Hero" in its backronym to center its experience around Clone Hero, and reflects it by showing and supporting latest Clone Hero features.
 

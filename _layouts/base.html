@@ -14,7 +14,9 @@
       <div class="title__drill">
         <div class="title__drill-line"></div>
         <div class="title__drill-container">
-          {% include drill.html %}
+          <a href="{{ '/' | relative_url }}">
+            {% include drill.html %}
+          </a>
         </div>
       </div>
       <h1>{{ site.title }}</h1>
