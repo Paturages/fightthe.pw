@@ -91,6 +91,12 @@ Of course, there's absolutely no guarantee of the quality of the charts you're g
 
 Discord is most likely the second medium through which charts are promoted, as it gathers thousands of users in a real-time manner. It is searchable and fairly user-accessible, and mostly directs the users to YouTube, which as mentioned allows them to check the chart beforehand.
 
+Many Clone Hero-centered Discord servers, whether it be the official one, collectives, streamers' or projects, provide one or multiple channels to advertise and showcase its community's charts. This encourages community participation and involvement.
+
+Sometimes, we don't want that: the CH Discord for example restricts its #custom-songs channel to "verified charters", who are vetted and reviewed by a few knowledgeable and dedicated people called "chart reviewers". This helps guarantee high quality, highly playable results to players and users and paint a professional face on the custom songs community. It also promotes overall skill enhancement, as the "charter role" becomes a trophy, a token of accomplishment as a charter.
+
+In the end, it all depends on which servers you frequent, but Discord can be a surprisingly fruitful source of charts!
+
 ### [ScoreHero](http://www.scorehero.com/)
 
 ![Screenshot of the "Customs" page of ScoreHero](/assets/1-year-of-chorus/scorehero.jpg)
