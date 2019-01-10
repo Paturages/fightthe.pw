@@ -6,7 +6,7 @@ layout: base
 
 <h2>Projects</h2>
 
-<p>A few of my personal projects in development.</p>
+<p>A few of my personal projects and those I'm contributing to in development.</p>
 
 {% for project in site.data.projects %}
 <div class="project">
@@ -20,7 +20,9 @@ layout: base
   </ul>
   <div class="project__links">
     <a href="{{ project.link }}" target="_blank">Link to project</a>
-    <a href="{{ project.github }}" target="_blank">Github</a>
+    {% if project.source %}
+    <a href="{{ project.source }}" target="_blank">Source code</a>
+    {% endif %}
   </div>
 </div>
 {% endfor %}

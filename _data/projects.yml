@@ -1,40 +1,47 @@
 - title: chorus
   subtitle: Clone Hero-friendly Organized Repository of User-provided Songs
-  description: chorus is a search engine for Guitar Hero/Clone Hero custom charts. It scrapes drive folders from community contributors to gather and centralize access to their custom-made charts and provides an interface to easily retrieve them upon request. A chart is the technical term attached to a transcription of any real song to just a few notes, usually 5, that Guitar Hero-style games like to use.
+  description: chorus is a search engine for Guitar Hero/Clone Hero custom charts. It scrapes drive folders from community contributors to gather and centralize access to their custom-made charts and provides an interface to easily retrieve them upon request. A chart is the technical term attached to a transcription of any real song to just a few notes, usually 5, that Guitar Hero-style games like to use. chorus gathered about 5,000 daily users in December 2018.
   link: https://chorus.fightthe.pw
-  github: https://github.com/Paturages/chorus
+  source: https://github.com/Paturages/chorus
   technologies:
     - Node.js
     - PostgreSQL
     - React (Inferno)
     - Google Drive API
+- title: clonehero.net
+  subtitle: Official website for Clone Hero
+  description: "Refactoring and redesign of the previous instance of the Clone Hero website that took place for the v0.21.7 release. Clone Hero is a Guitar Hero-like game made in Unity that aims to emulate the original Guitar Hero experience, along with common and popular features used and requested by the community. It hit more than 90,000 active players on December 2018."
+  link: https://clonehero.net
+  technologies:
+    - Jekyll
+    - GitLab Pages
+    - Python
+    - SCSS
+- title: fightthe.pw
+  subtitle: Well... this website
+  description: It's a bit meta, but what you're browsing right now is designed from scratch!
+  link: /
+  source: https://github.com/Paturages/fightthe.pw
+  technologies:
+    - Jekyll
+    - GitHub Pages
+    - SCSS
 - title: Advent of Code 2017
   subtitle: 25 problems solved throughout December 2017
   description: Little snippets of code I used to solve all 25 riddles from the 2017 edition of Advent of Code. More information [here](http://adventofcode.com/2017).
   link: https://github.com/Paturages/advent
-  github: https://github.com/Paturages/advent
   technologies:
     - JavaScript (ECMAScript 2015+)
 - title: kerfuffle
   subtitle: A /r/visualnovels Dies Irae contest entry
   description: This was a self-imposed "hackathon" to see how much of a proof-of-concept "game" I could implement in just a dozen hours. kerfuffle is a very basic, barebones Disgaea/Fire Emblem/Dofus-like game that somehow leverages React features for game status management. It is also one of the weebest things I've ever done.
-  link: https://fightthe.pw/kerfuffle
-  github: https://github.com/Paturages/kerfuffle
+  link: https://public.fightthe.pw/kerfuffle
+  source: https://github.com/Paturages/kerfuffle
   technologies:
     - React (Inferno)
 - title: ng-ucldr
   subtitle: Barebones, minimalistic date picker
   description: ng-ucldr is a very basic date picker for AngularJS (1.x) I implemented for personal needs, and packaged for npm later on to test the npm system. Nothing really special, but just one way to have a date picker in about 200 lines of code.
   link: https://github.com/Paturages/ng-ucldr
-  github: https://github.com/Paturages/ng-ucldr
   technologies:
     - AngularJS (1.x)
-- title: fightthe.pw
-  subtitle: Well... this website
-  description: It's a bit meta, but what you're browsing right now is designed from scratch!
-  link: /
-  github: https://github.com/Paturages/fightthe.pw
-  technologies:
-    - Jekyll
-    - SCSS
-    - Markdown

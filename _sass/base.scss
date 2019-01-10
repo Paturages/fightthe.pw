@@ -1,7 +1,7 @@
 @import 'colors.scss';
 
 html, body {
-  background: $color__lighter;
+  background: lighten($color__lighter, 10%);
   color: $color__darker;
   margin: 0;
 }
@@ -21,4 +21,8 @@ img {
   max-width: 800px;
   margin: 2em auto 4em;
   padding: 0 1em;
+}
+
+small {
+  font-size: .8em;
 }
