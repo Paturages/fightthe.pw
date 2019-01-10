@@ -520,3 +520,5 @@ The last stars on charter experience, quality and exhaustivity are definitely wo
 chorus is most definitely not a perfect, end-all solution, but it did try to hit the most bullet points as possible, while also not being too ambitious. Because sometimes, less *is* more.
 
 Thanks for reading! The next article will most likely be about the technical aspects of chorus, and how they could be improved.
+
+[Discuss on reddit](https://www.reddit.com/r/CloneHero/comments/aeo35n/1_year_of_chorus_a_history_of_looking_for_charts/)
