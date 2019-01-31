@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "1 year of chorus: how to make a search engine?"
+title: "1 year of chorus: behind the searching platform"
 date: 2019-01-30 18:00:00 +0100
 tags: [chorus, clone-hero, dev]
 ---
@@ -371,6 +371,16 @@ dragonforce through the fire and flames
 ```
 
 Well now that's a situation. To make it brief, chorus leverages the [`pg_trgm` extension](https://www.postgresql.org/docs/current/pgtrgm.html) for PostgreSQL, which allows to compute "similarity" scores for any text query. And that's what's powering the "quick search" feature of chorus.
+
+It works well enough, but it's not perfect.
+
+Since we're matching fields indiscriminately, shorter search terms have higher chances of being ambiguous. For example, for a `ghost` query, we'd get more songs containing the word "ghost" than songs by the band "Ghost", which is what we might be looking for. But there's no simple way to balance proper ponderation because there's really no telling which field any user might prefer at any point.
+
+As is, if you don't set a similarity threshold, you'll get seemingly random results if nothing fits your query. But there's also no simple way to define such a threshold because the similarity score actually kinda depends on the amount of "words" you stored in your compiled column of all searchable fields.
+
+In fact, the shorter this column is, the higher score it may yield to a query. For example, take the song "Table", by the artist "Table", charted by "Table", featured in the album "Table". Since it's all the same word, the only relevant search term and word is really "table". That explains why you might get this particular result, seemingly randomly, upon searching on chorus.
+
+The advantage of the `pg_trgm` solution is that you just need PostgreSQL. You're already using PostgreSQL for storage: if it can deal with loose searching, then let's go! You have less things to install, less things to deal with, and possibly more resources to work with. But the results will be suboptimal.
 
 Of course, you could just provide "advanced search": explicitly require the user to fill a "name" field, an "artist" field, etc... but do you really want to make every user process that every time? If you're having a text field for every searchable column, you're gonna get bloated really fast. The alternative would just to provide the commonly used ones, but that's no fun. And it requires me to switch text fields, which loses time.
 
