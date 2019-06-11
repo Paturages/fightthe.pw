@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/paturages
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://fightthe.pw
+  * I am paturages (https://keybase.io/paturages) on keybase.
+  * I have a public key ASANatV05M-6qrSRj--y4pha9dREdYvIhYC1dT3aheIVSwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01200d6ad574e4cfbaaab4918fefb2e2985af5d444758bc88580b5753dda85e2154b0a",
+      "host": "keybase.io",
+      "kid": "01200d6ad574e4cfbaaab4918fefb2e2985af5d444758bc88580b5753dda85e2154b0a",
+      "uid": "5a9e8b864c737092c433678dfaf70319",
+      "username": "paturages"
+    },
+    "merkle_root": {
+      "ctime": 1560264070,
+      "hash": "303366a30c5bd38aa004f14ec895f495f14c6497a5684af0286ee1e6cc052b9f2c2bbbb2af410b53c89d6632cdf0d43e96fe2ba2e3b87d91f4783c54368b3f05",
+      "hash_meta": "d681bcc7a71edbe6ffee3a200a100f2fe3077af8ab27683e0250573cceece4ab",
+      "seqno": 5549659
+    },
+    "service": {
+      "entropy": "Rt6caF/HZbX1jpx+O+MOst9L",
+      "hostname": "fightthe.pw",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.0.0"
+  },
+  "ctime": 1560264111,
+  "expire_in": 504576000,
+  "prev": "e27be3b7df7688fb5d99262cbdd6f58dc188e35a68f5c41e12491da8fb42e81d",
+  "seqno": 9,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgDWrVdOTPuqq0kY/vsuKYWvXURHWLyIWAtXU92oXiFUsKp3BheWxvYWTESpcCCcQg4nvjt992iPtdmSYsvdb1jcGI41po9cQeEkkdqPtC6B3EIPvUvfqha3wlaQlDiDyDb8hsMK+HdSfRzr3pqxSazvf+AgHCo3NpZ8RAX80j18rf/dbStXtMpbPKltAbL1kg1eFUCH2vmr99otY99C0hz2YFWROTFMYxv3rB0CAW2Y7N2ZkNWZC3QrxZBqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIMWYuQdINE+PAU18hhtgaT+wBjkqUg0gJ3y2gH+r0juBo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/paturages
+
+==================================================================
